@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maestro</title>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: whitesmoke;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: blueviolet;
+            color: antiquewhite;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+
+        }
+        button:hover {
+            background-color: black;
+        }
+
+    </style>
 </head>
+
 <body>
-    <button id="boton">Cómeme</button>
+    <h1>Maestro</h1>
+    <button onclick="refresh()">Refresh</button>
+    <button onclick="addNew()">New</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    
+    <tbody id="tableBody">
+
+    </tbody>
+    <table>
+
 
 
   
