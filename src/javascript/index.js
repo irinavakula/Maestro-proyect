@@ -13,8 +13,16 @@ jQuery(function() {
         $(".form").slideDown();
     })
 
+    $("#action").on("click", function(event) {
+        $(".table").slideDown();
+    })
+
     $("#cancel").on("click", function(event) {
         $(".form").slideUp();
+    })
+
+    $("#Delete").on("click", function(event) {
+        $(".table").slideUp();
     })
 
     $("#create").on("click", function(event) {
